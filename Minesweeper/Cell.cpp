@@ -87,15 +87,3 @@ bool Cell :: isHidden(){
 void Cell :: setHide(bool h){
 	this->hide = h;
 }
-
-string Cell :: getStr(){
-	char hide2Char;
-	char finalStr[2];
-	string s;
-	if(hide){hide2Char = '1';}else {hide2Char = '0';}
-	finalStr[0] = this->value;
-	finalStr[1] = ',';
-	finalStr[2] = hide2Char;
-	s = string(finalStr);
-	return s;
-}
